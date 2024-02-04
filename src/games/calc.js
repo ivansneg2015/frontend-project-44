@@ -1,7 +1,6 @@
 const getRandomNumber = (min, max) => { 
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
   const randomIndex = getRandomNumber(0, 2);

@@ -10,10 +10,10 @@ const isPrime = (num) => {
 
   return true;
   };
-  
-  export const playPrime = () => {   
-    const randomNumber = Math.floor(Math.random() * 100) + 1;  
-    console.log(`Question: ${randomNumber}`);  
-    const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no'; 
+
+  export const playPrime = () => {
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(`Question: ${randomNumber}`);
+    const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
     return correctAnswer;
   };
