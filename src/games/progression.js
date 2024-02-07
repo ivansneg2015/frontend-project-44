@@ -3,7 +3,7 @@ const generateProgression = (length) => {
   const start = Math.floor(Math.random() * 100);
   const step = Math.floor(Math.random() * 10) + 1;
 
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     const number = start + step * i;
     progression.push(number);
   }
