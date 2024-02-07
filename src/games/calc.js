@@ -23,12 +23,4 @@ export const playCalculate = () => {
   const correctAnswer1 = calculateExpression(number1, number2, operator);
   console.log(`Question: ${number1} ${operator} ${number2}`);
   return correctAnswer1;
-};export const playEven = () => {
-  const number = Math.floor(Math.random() * 100);
-  console.log(`Question: ${number}`);
-   if (number % 2 === 0) {
-     return 'yes';
-     } else {
-       return 'no';
-     }
- };
+};
