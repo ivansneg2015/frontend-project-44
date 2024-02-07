@@ -1,13 +1,13 @@
 const findGCD = (a, b) => {
-   while (a !== b) {
-      if (a > b) {
-        a -= b;
-      } else {
-        b -= a;
-      }
+  while (a !== b) {
+    if (a > b) {
+      a = a - b;
+    } else {
+      b = b - a;
     }
-    return a;
-  };
+  }
+  return a;
+};
 
 const playGcd = () => {
   const num1 = Math.floor(Math.random() * 100) + 1;
