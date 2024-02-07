@@ -1,8 +1,10 @@
-export const playEven = () => {
+const playEven = () => {
   const number = Math.floor(Math.random() * 100);
   console.log(`Question: ${number}`);
   if (number % 2 === 0) {
     return 'yes';
   }
-    return 'no';
+  return 'no';
 };
+
+export default playEven;

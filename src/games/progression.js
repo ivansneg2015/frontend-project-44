@@ -17,7 +17,7 @@ const hideNumber = (progression, position) => {
   return hiddenProgression;
 };
 
-export const playProg = () => {
+const playProg = () => {
   const length = Math.floor(Math.random() * 6) + 5;
   const progression = generateProgression(length);
   const position = Math.floor(Math.random() * length);
@@ -26,3 +26,5 @@ export const playProg = () => {
   console.log(`Question: ${hiddenProgression.join(' ')}`);
   return correctAnswer;
 };
+
+export default playProg;

@@ -1,4 +1,4 @@
-export const playGcd = () => {
+const playGcd = () => {
   const num1 = Math.floor(Math.random() * 100) + 1;
   const num2 = Math.floor(Math.random() * 100) + 1;
   console.log (`Question: ${num1} ${num2} `);
@@ -15,3 +15,5 @@ export const playGcd = () => {
   const correctAnswer = findGCD(num1,num2);
   return correctAnswer;
 };
+
+export default playGcd;

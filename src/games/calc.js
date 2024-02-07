@@ -16,7 +16,7 @@ const calculateExpression = (num1, num2, operator) => {
   }
 };
 
-export const playCalculate = () => {
+const playCalculate = () => {
   const number1 = getRandomNumber(1, 20);
   const number2 = getRandomNumber(1, 20);
   const operator = getRandomOperator();
@@ -24,3 +24,5 @@ export const playCalculate = () => {
   console.log(`Question: ${number1} ${operator} ${number2}`);
   return correctAnswer1;
 };
+
+export default playCalculate;
