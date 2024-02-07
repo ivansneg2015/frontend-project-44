@@ -8,7 +8,6 @@ export const playGame = (game, question) => {
 
   let correctAnswers = 0;
   const maxQuestions = 3;
-  let currentQuestionNumber = 0;
 
   while (correctAnswers < maxQuestions) {
     const correctAnswer = game();
@@ -17,14 +16,12 @@ export const playGame = (game, question) => {
     if (userAnswer.toString() === correctAnswer.toString()) {
       correctAnswers += 1;
       console.log('Correct!');
-  } else {
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-    return;
-  }
-    currentQuestionNumber += 1;
+      return;
+    }
 }
 
 console.log(`Congratulations, ${name}!`);
 };
-
