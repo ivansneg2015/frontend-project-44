@@ -29,3 +29,4 @@ export const playGame = (game, question) => {
 
 console.log(`Congratulations, ${name}!`);
 };
+
