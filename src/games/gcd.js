@@ -1,4 +1,6 @@
 const findGCD = (a, b) => {
+  const a = a;
+  const b = b;
   while (a !== b) {
     if (a > b) {
       a -= b;
