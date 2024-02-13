@@ -1,3 +1,5 @@
+import playGame from '../index.js';
+
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
@@ -27,4 +29,6 @@ const playCalculate = () => {
   return correctAnswer1;
 };
 
-export default playCalculate;
+const question = 'What number is missing in the progression?';
+
+export default () => playGame(playCalculate, question);
