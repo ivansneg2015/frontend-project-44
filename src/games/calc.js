@@ -30,6 +30,6 @@ const playCalculate = () => {
   return correctAnswer1;
 };
 
-const question = 'What number is missing in the progression?';
+const question = 'What is the result of the expression?';
 
 export default () => playGame(playCalculate, question);
