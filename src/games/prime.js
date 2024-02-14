@@ -1,3 +1,7 @@
+import playGame from '../index.js';
+
+import { getRandomNumber } from '../index.js';
+
 const isPrime = (num) => {
   if (num <= 1) {
     return false;
@@ -12,10 +16,12 @@ const isPrime = (num) => {
 };
 
 const playPrime = () => {
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  const randomNumber = getRandomNumber(100);
   console.log(`Question: ${randomNumber}`);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   return correctAnswer;
 };
 
-export default playPrime;
+const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+export default () => playGame(playPrime, question);

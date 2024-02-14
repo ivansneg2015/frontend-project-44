@@ -1,7 +1,11 @@
+import playGame from '../index.js';
+
+import { getRandomNumber } from '../index.js';
+
 const generateProgression = (length) => {
   const progression = [];
-  const start = Math.floor(Math.random() * 100);
-  const step = Math.floor(Math.random() * 10) + 1;
+  const start = getRandomNumber(100);
+  const step = getRandomNumber(10) + 1;
 
   for (let i = 0; i < length; i += 1) {
     const number = start + step * i;
@@ -17,14 +21,16 @@ const hideNumber = (progression, position) => {
   return hiddenProgression;
 };
 
-const playProg = () => {
-  const length = Math.floor(Math.random() * 6) + 5;
+const playProgression = () => {
+  const length =getRandomNumber(6) + 5;
   const progression = generateProgression(length);
-  const position = Math.floor(Math.random() * length);
+  const position = getRandomNumber(length);
   const hiddenProgression = hideNumber(progression, position);
   const correctAnswer = progression[position];
   console.log(`Question: ${hiddenProgression.join(' ')}`);
   return correctAnswer;
 };
 
-export default playProg;
+const question = 'What number is missing in the progression?';
+
+export default () => playGame(playProgression, question);

@@ -1,5 +1,9 @@
+import playGame from '../index.js';
+
+import { getRandomNumber } from '../index.js';
+
 const playEven = () => {
-  const number = Math.floor(Math.random() * 100);
+  const number = getRandomNumber(100);
   console.log(`Question: ${number}`);
   if (number % 2 === 0) {
     return 'yes';
@@ -7,4 +11,6 @@ const playEven = () => {
   return 'no';
 };
 
-export default playEven;
+const question = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+export default () => playGame(playEven, question);

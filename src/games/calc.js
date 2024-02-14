@@ -1,9 +1,10 @@
 import playGame from '../index.js';
 
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomNumber } from '../index.js';
+
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
-  const randomIndex = getRandomNumber(0, 2);
+  const randomIndex = getRandomNumber(3);
   return operators[randomIndex];
 };
 
@@ -21,8 +22,8 @@ const calculateExpression = (num1, num2, operator) => {
 };
 
 const playCalculate = () => {
-  const number1 = getRandomNumber(1, 20);
-  const number2 = getRandomNumber(1, 20);
+  const number1 = getRandomNumber(100);
+  const number2 = getRandomNumber(100);
   const operator = getRandomOperator();
   const correctAnswer1 = calculateExpression(number1, number2, operator);
   console.log(`Question: ${number1} ${operator} ${number2}`);
