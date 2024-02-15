@@ -1,6 +1,4 @@
-import playGame from '../index.js';
-
-import { getRandomNumber } from '../index.js';
+import playGame, { getRandomNumber } from '../index.js';
 
 const playGcd = () => {
   const num1 = getRandomNumber(100);
