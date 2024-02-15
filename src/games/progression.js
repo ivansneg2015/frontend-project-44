@@ -20,7 +20,7 @@ const hideNumber = (progression, position) => {
 };
 
 const playProgression = () => {
-  const length =getRandomNumber(6) + 5;
+  const length = getRandomNumber(6) + 5;
   const progression = generateProgression(length);
   const position = getRandomNumber(length);
   const hiddenProgression = hideNumber(progression, position);
