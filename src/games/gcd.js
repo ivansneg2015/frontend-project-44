@@ -5,13 +5,11 @@ const playGcd = () => {
   const number2 = getRandomNumber(100);
   let tempNum1 = number1;
   let tempNum2 = number2;
-  while (tempNum1 !== tempNum2) {
-    if (tempNum1 > tempNum2) {
-      tempNum1 -= tempNum2;
-    } else {
-      tempNum2 -= tempNum1;
+  while (tempNum2 !== 0) {
+     const temp =tempNum2;
+     tempNum2 = tempNum1 % tempNum2;
+     tempNum1 = temp;
     }
-  }
   const correctAnswer = tempNum1;
   return { correctAnswer, number1, number2 };
 };
