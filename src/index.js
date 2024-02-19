@@ -10,8 +10,8 @@ const playGame = (game, question) => {
   const maxQuestions = 3;
   for (let i = 0; i < maxQuestions; i += 1) {
     const {
-           correctAnswer, number1, number2, operator
-         } = game();
+      correctAnswer, number1, number2, operator,
+    } = game();
     if (correctAnswer === 'yes' || correctAnswer === 'no') console.log(`Question: ${number1}`);
     else if (number2 === undefined) console.log(`Question: ${number1.join(' ')}`);
     else if (operator === undefined) console.log(`Question: ${number1} ${number2}`);
