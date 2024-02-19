@@ -6,10 +6,10 @@ const playGcd = () => {
   let tempNum1 = number1;
   let tempNum2 = number2;
   while (tempNum2 !== 0) {
-     const temp =tempNum2;
-     tempNum2 = tempNum1 % tempNum2;
-     tempNum1 = temp;
-    }
+    const temp = tempNum2;
+    tempNum2 = tempNum1 % tempNum2;
+    tempNum1 = temp;
+  }
   const correctAnswer = tempNum1;
   return { correctAnswer, number1, number2 };
 };
