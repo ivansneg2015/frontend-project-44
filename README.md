@@ -1,27 +1,27 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ivansneg2015/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ivansneg2015/frontend-project-44/actions)
 
-Описание
-«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
+Description
+"Mind Games" is a set of five console games based on the principle of popular mobile applications for brain training. Each game asks questions that need to be answered correctly. After three correct answers, it is considered that the game is over. Incorrect answers end the game and offer to go through it again. Games:
 
-Калькулятор. Арифметические выражения, которые необходимо вычислить.
-Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-Определение четного числа.
-Определение наибольшего общего делителя.
-Определение простого числа.
+Calculator. Arithmetic expressions that need to be calculated.
+The progression. Search for missing numbers in a sequence of numbers.
+The definition of an even number.
+Determining the largest common divisor.
+Definition of a prime number.
 
-Минимальные требования 
-- Процессор с архитектурой x86 (32-битный) или x86-64 (64-битный) с тактовой частотой 1 ГГц или выше
-- Оперативная память (RAM) от 1 ГБ для 32-битной системы или 2 ГБ для 64-битной системы
-- Свободное место на жестком диске от 25 ГБ
-- Графический процессор, поддерживающий разрешение экрана 1024x768 пикселей и 4-битную глубину цвета (32 бита на пиксель рекомендуется для использования с эффектами рабочего стола)
-- Загрузочное устройство, такое как CD/DVD-привод или USB-накопитель, для установки программы
-- Интернет-соединение для загрузки и обновления пакетов программного обеспечения
+Minimum requirements 
+- An x86 (32-bit) or x86-64 (64-bit) processor with a clock frequency of 1 GHz or higher
+- RAM from 1 GB for a 32-bit system or 2 GB for a 64-bit system
+- Free hard disk space from 25 GB
+- A graphics processor that supports a 1024x 768 pixel screen resolution and 4-bit color depth (32 bits per pixel is recommended for use with desktop effects)
+- A bootable device, such as a CD/DVD drive or USB stick, to install the program
+- Internet connection for downloading and updating software packages
 
-Важно отметить, что это минимальные требования и для более комфортной работы рекомендуется иметь более мощное оборудование.
+It is important to note that these are the minimum requirements and it is recommended to have more powerful equipment for more comfortable work.
 
-Для глобальной установки пакета из локальной директории используйте команду npm link. Её необходимо запускать из корневой директории проекта.
-Установите пакет в систему с помощью npm link и убедитесь в том, что он работает, запустив brain-games, brain-calc, brain-even, brain-gcd, brain-progression, brain-prime в терминале. Команда npm link может потребовать запуск с sudo.
+To install a package globally from a local directory, use the npm link command. It must be run from the root directory of the project.
+Install the package into the system using npm link and make sure that it works by running brain-games, brain-calc, brain-even, brain-gcd, brain-progression, brain-prime in the terminal. The npm link command may require starting from sudo.
 
 brain-even
 https://asciinema.org/a/MgVGrhaiuAD1LKLnQiaHJ61w0
