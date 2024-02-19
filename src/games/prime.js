@@ -14,10 +14,9 @@ const isPrime = (num) => {
 };
 
 const playPrime = () => {
-  const randomNumber = getRandomNumber(100);
-  console.log(`Question: ${randomNumber}`);
-  const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-  return correctAnswer;
+  const number1 = getRandomNumber(100);
+  const correctAnswer = isPrime(number1) ? 'yes' : 'no';
+  return { correctAnswer, number1 };
 };
 
 const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';

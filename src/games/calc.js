@@ -23,9 +23,8 @@ const playCalculate = () => {
   const number1 = getRandomNumber(100);
   const number2 = getRandomNumber(100);
   const operator = getRandomOperator();
-  const correctAnswer1 = calculateExpression(number1, number2, operator);
-  console.log(`Question: ${number1} ${operator} ${number2}`);
-  return correctAnswer1;
+  const correctAnswer = calculateExpression(number1, number2, operator);
+  return { correctAnswer, number1, number2, operator };
 };
 
 const question = 'What is the result of the expression?';

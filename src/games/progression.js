@@ -25,8 +25,8 @@ const playProgression = () => {
   const position = getRandomNumber(length);
   const hiddenProgression = hideNumber(progression, position);
   const correctAnswer = progression[position];
-  console.log(`Question: ${hiddenProgression.join(' ')}`);
-  return correctAnswer;
+  const number1 = hiddenProgression;
+  return { correctAnswer, number1 };
 };
 
 const question = 'What number is missing in the progression?';

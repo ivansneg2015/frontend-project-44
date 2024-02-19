@@ -1,12 +1,13 @@
 import playGame, { getRandomNumber } from '../index.js';
 
 const playEven = () => {
-  const number = getRandomNumber(100);
-  console.log(`Question: ${number}`);
-  if (number % 2 === 0) {
-    return 'yes';
+  const number1 = getRandomNumber(100);
+  if (number1 % 2 === 0) {
+    const correctAnswer = 'yes';
+    return { correctAnswer, number1 };
   }
-  return 'no';
+  const correctAnswer = 'no';
+  return { correctAnswer, number1 };
 };
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
