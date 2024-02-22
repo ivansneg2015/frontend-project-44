@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ivansneg2015/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ivansneg2015/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/972ff59d773f7478e696/maintainabilit)] (https://codeclimate.com/github/ivansneg2015/frontend-project-44/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/972ff59d773f7478e696/maintainabilit)](https://codeclimate.com/github/ivansneg2015/frontend-project-44/maintainability)
 
 #Description:
 Welcome to my first pet project. This git repository contains several math games.
