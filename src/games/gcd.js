@@ -1,19 +1,22 @@
-import playGame, { getRandomNumber } from '../index.js';
+import playGame from '../index.js';
 
-const playGcd = () => {
-  const number1 = getRandomNumber(100);
-  const number2 = getRandomNumber(100);
-  let tempNum1 = number1;
-  let tempNum2 = number2;
-  while (tempNum2 !== 0) {
-    const temp = tempNum2;
-    tempNum2 = tempNum1 % tempNum2;
-    tempNum1 = temp;
+import getRandomNumber from '../randomnumber.js';
+
+const Gcd = (number1, number2) => {
+  if (number2 === 0) {
+    return number1;
   }
-  const correctAnswer = tempNum1;
-  return { correctAnswer, number1, number2 };
+  return Gcd(number2, number1 % number2);
+};
+const playGcd = () => {
+  const num1 = getRandomNumber(1, 100);
+  const num2 = getRandomNumber(1, 100);
+
+  const question = `${num1} ${num2}`;
+  const correctAnswer = `${Gcd(num1, num2)}`;
+  return [question, correctAnswer];
 };
 
-const question = 'Find the greatest common divisor of given numbers.';
+const gameRules = 'Find the greatest common divisor of given numbers.';
 
-export default () => playGame(playGcd, question);
+export default () => playGame(playGcd, gameRules);

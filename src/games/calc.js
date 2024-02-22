@@ -1,13 +1,11 @@
-import playGame, { getRandomNumber } from '../index.js';
+import playGame from '../index.js';
 
-const getRandomOperator = () => {
-  const operators = ['+', '-', '*'];
-  const randomIndex = getRandomNumber(3);
-  return operators[randomIndex];
-};
+import getRandomNumber from '../randomnumber.js';
 
-const calculateExpression = (num1, num2, operator) => {
-  switch (operator) {
+const operands = ['+', '-', '*'];
+
+const expression = (num1, operand, num2) => {
+  switch (operand) {
     case '+':
       return num1 + num2;
     case '-':
@@ -15,20 +13,18 @@ const calculateExpression = (num1, num2, operator) => {
     case '*':
       return num1 * num2;
     default:
-      return 0;
+       throw new Error(`Unknown operand: '${operand}'!`);
   }
 };
-
 const playCalculate = () => {
-  const number1 = getRandomNumber(100);
-  const number2 = getRandomNumber(100);
-  const operator = getRandomOperator();
-  const correctAnswer = calculateExpression(number1, number2, operator);
-  return {
-    correctAnswer, number1, number2, operator,
-  };
+  const num1 = getRandomNumber(1, 10);
+  const num2 = getRandomNumber(1, 10);
+  const randomOperand = operands[getRandomNumber(0, operands.length - 1)];
+  const question = `${num1} ${randomOperand} ${num2}`;
+  const correctAnswer = `${expression(num1, randomOperand, num2)}`;
+  return [question, correctAnswer];
 };
 
-const question = 'What is the result of the expression?';
+const gameRules = 'What is the result of the expression?';
 
-export default () => playGame(playCalculate, question);
+export default () => playGame(playCalculate, gameRules);

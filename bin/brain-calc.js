@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import playbinCalculate from '../src/games/calc.js';
+import playCalculate from '../src/games/calc.js';
 
-playbinCalculate();
+playCalculate();

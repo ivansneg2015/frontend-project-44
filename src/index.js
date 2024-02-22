@@ -1,24 +1,17 @@
 import readlineSync from 'readline-sync';
 
-export const getRandomNumber = (number) => Math.floor(Math.random() * number);
-
-const playGame = (game, question) => {
+const playGame = (generateGame, gameRules) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(`${question}`);
-  const maxQuestions = 3;
-  for (let i = 0; i < maxQuestions; i += 1) {
-    const {
-      correctAnswer, number1, number2, operator,
-    } = game();
-    if (correctAnswer === 'yes' || correctAnswer === 'no') console.log(`Question: ${number1}`);
-    else if (number2 === undefined) console.log(`Question: ${number1.join(' ')}`);
-    else if (operator === undefined) console.log(`Question: ${number1} ${number2}`);
-    else console.log(`Question: ${number1} ${operator} ${number2}`);
+  console.log(gameRules);
+  const countQuestions = 3;
+  for (let i = 0; i < countQuestions; i += 1) {
+    const [question, correctAnswer] = generateGame();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer.toString() === correctAnswer.toString()) {
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
