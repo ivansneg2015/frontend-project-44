@@ -10,7 +10,7 @@ const generateProgression = (firstItem, step, length) => {
   }
   return array;
 };
-function playProgression () {
+function playProgression() {
   const first = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
   const length = getRandomNumber(5, 10);
@@ -20,7 +20,7 @@ function playProgression () {
   progression[randIndex] = '..';
   const question = progression.join(' ');
   return [question, correctAnswer];
-};
+}
 
 const gameRules = 'What number is missing in the progression?';
 

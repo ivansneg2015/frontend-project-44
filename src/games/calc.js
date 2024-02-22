@@ -13,7 +13,7 @@ const expression = (num1, operand, num2) => {
     case '*':
       return num1 * num2;
     default:
-       throw new Error(`Unknown operand: '${operand}'!`);
+      throw new Error(`Unknown operand: '${operand}'!`);
   }
 };
 const playCalculate = () => {
