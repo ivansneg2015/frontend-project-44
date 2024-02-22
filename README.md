@@ -1,42 +1,38 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ivansneg2015/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ivansneg2015/frontend-project-44/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/972ff59d773f7478e696/maintainabilit)] (https://codeclimate.com/github/ivansneg2015/frontend-project-44/maintainability)
 
-Description
-"Mind Games" is a set of five console games based on the principle of popular mobile applications for brain training. Each game asks questions that need to be answered correctly. After three correct answers, it is considered that the game is over. Incorrect answers end the game and offer to go through it again. Games:
+#Description:
+Welcome to my first pet project. This git repository contains several math games.
 
-Calculator. Arithmetic expressions that need to be calculated.
-The progression. Search for missing numbers in a sequence of numbers.
-The definition of an even number.
-Determining the largest common divisor.
-Definition of a prime number.
+#Setup
+For running each games do next actions:
+1. Check the current updates for database with available packages: enter command: line apt update
+2. Install Node.js package, enter command line: apt install nodejs
+3. Upgrade Node.js to the latest version, enter command line: apt upgrade nodejs
+4. To allow you to install modules and packages with Node.js, install npm package, enter command line: apt install npm
+5. Add and check depencies, enter command line: make install
+6. Run games, enter command line: make *game name* e.g 'make brain-even'
 
-Minimum requirements 
-- An x86 (32-bit) or x86-64 (64-bit) processor with a clock frequency of 1 GHz or higher
-- RAM from 1 GB for a 32-bit system or 2 GB for a 64-bit system
-- Free hard disk space from 25 GB
-- A graphics processor that supports a 1024x 768 pixel screen resolution and 4-bit color depth (32 bits per pixel is recommended for use with desktop effects)
-- A bootable device, such as a CD/DVD drive or USB stick, to install the program
-- Internet connection for downloading and updating software packages
+#Game-list:
+1. **brain-games** - game with introduction
+2. **brain-even** - check a number for evenness 
+3. **brain-calc** - calculate simple expressions
+4. **brain-gcd** - calculate the greatest common divisor of 2 numbers
+5. **brain-prime** - check a number for primality
+6. **brain-progression** - calculate and enter missing number from progression
 
-It is important to note that these are the minimum requirements and it is recommended to have more powerful equipment for more comfortable work.
+Asciinema for brain-even game
+[![asciicast](https://asciinema.org/a/631291.svg)](https://asciinema.org/a/631291)
 
-To install a package globally from a local directory, use the npm link command. It must be run from the root directory of the project.
-Install the package into the system using npm link and make sure that it works by running brain-games, brain-calc, brain-even, brain-gcd, brain-progression, brain-prime in the terminal. The npm link command may require starting from sudo.
+Asciinema for brain-calc game
+[![asciicast](https://asciinema.org/a/631370.svg)](https://asciinema.org/a/631370)
 
-brain-even
-https://asciinema.org/a/MgVGrhaiuAD1LKLnQiaHJ61w0
+Asciinema for brain-gcd game
+[![asciicast](https://asciinema.org/a/631376.svg)](https://asciinema.org/a/631376)
 
-brain-calc
-https://asciinema.org/a/6TvLUd24XGBrWPPqyezAqOCY8
- 
-brain-gcd
-https://asciinema.org/a/xQ66aCutfEExsPdyYVxAuSv49
+Asciinema for brain-progression game
+[![asciicast](https://asciinema.org/a/uGjDnNU6qt4NUSRm7h4CNay9E.svg)](https://asciinema.org/a/uGjDnNU6qt4NUSRm7h4CNay9E)
 
-brain-progression
-https://asciinema.org/a/TanfZtBfCa2eUqZ9SrUJ228JH
-
-brain-prime
-https://asciinema.org/a/lbNQINhv8HhNNhQX17bqJrfGx
-
- Maintainability 
- <a href="https://codeclimate.com/github/ivansneg2015/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/972ff59d773f7478e696/maintainability" /></a>
+Asciinema for brain-prime game
+[![asciicast](https://asciinema.org/a/631537.svg)](https://asciinema.org/a/631537)
